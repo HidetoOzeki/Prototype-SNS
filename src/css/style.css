@@ -1,0 +1,70 @@
+html {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    background-color: aliceblue;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    background-color: linen;
+    flex:1;
+}
+
+.inputtext{
+    border: 0px;
+    background-color: gainsboro;
+    border-radius: 3px;
+    font-size: calc(1em + 1vw);
+    margin: 16px;
+}
+
+.simple_big_button{
+    text-align:center;
+    font-size: calc(1em + 1vw);
+    margin-top:10vh;
+}
+
+
+.proto_main_button{
+    border: 1px solid gainsboro;
+    border-radius: 3px;
+}
+
+.icon_relative_vertical {
+    display: block;
+    width: 24vh;
+    height: 24vh;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+
+.icon_small {
+    display: block;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+
+.icon_relative_horizontal {
+    display: block;
+    width: 24vw;
+    height: 24vw;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+
+.menubutton {
+    float:left;
+    margin:0;
+    width:25%;
+    height: 8vh;
+}
