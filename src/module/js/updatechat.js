@@ -1,4 +1,4 @@
-$(function(){
+/*$(function(){
     console.log("jqueryが読み込まれました。");
     $("#sendbutton").on("click",function(){
         console.log("送信ボタンが押されました");
@@ -14,3 +14,16 @@ $(function(){
     });
 
 });
+*/
+function updatechat(){
+    $.ajax({
+        type: 'POST',
+        url: 'module/updatechat.php',
+        dataType: 'text',
+        data: {chatroom_id: $("#chatroom_id").val()},
+    }).done(function(data){
+        console.log("chat updated!");
+        $("#ajax").html(data);
+    });
+}
+setInterval(updatechat,500);

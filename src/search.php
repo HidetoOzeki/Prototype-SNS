@@ -21,18 +21,21 @@ foreach ($sql as $results) {
         ',
         $results["user_name"],
         '
-        <form action="chatroom.php" method="post">
-
+        <form action="chat.php" method="post">
+        
         <input type="hidden" name="user_id" value="',$_SESSION['user']['user_id'],'">
         <input type="hidden" name="other_user_id" value="',$results['user_id'],'">
         <button id="startchat">チャットする</button>
-        
         </form>
     </div>
     </div>
     ';
 }
+//
+//
 ?>
+
+
 
 </div>
 
